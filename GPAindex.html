@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>GPA Calculator</title>
+  <link type="text/css" rel="stylesheet" href="GPACalc.css">
+</head>
+<body>
+    <div id="mainthing">
+    <h1>Tetsu's GPA Calculator (<i>for HK</i>)</h1> 
+    <p>Directions: Enter in every class you've taken during high school or just the ones you're taking this year along with the corresponding grade in that class to get a GPA.
+        After every class, click "Add". Click "Calculate GPA" to get a GPA and "Clear" to restart. If you calculate GPA and then want to add another class, you do not have to clear the previous scores<br> <br> **Accurate up to the thousandth's place. Beyond that, results may vary due to complicated coding things**
+    </p>
+    <div>
+        <label for="classType">Class Type:</label>
+        <select name="types" id="classType">
+            <option value="AP">AP</option>
+            <option value="UConn">UConn</option>
+            <option value="PLTW">PLTW</option>
+            <option value="Honors">Honors</option>
+            <option value="CollegePrep">College Prep</option>
+          </select>
+    </div>
+    <div>
+        <label style="padding-top: 20px;" for="className">Class Name:</label>
+        <input type="text" id="className">  
+    </div>  
+    <div>
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade">  
+    </div> 
+    <div>
+        <label  style="padding-bottom: 10px;" for="classDuration">Class Length</label>
+        <select name="types" id="duration">
+            <option value="Two Semesters">Two Semesters</option>
+            <option value="One Semester">One Semester</option>
+          </select>
+    </div> 
+    <div>
+        <label></label>
+        <input type="button" id="add_score" value="Add">
+        <input type="button" id="clear_scores" value="Clear Scores">  
+        <input type="button" id="calculate" value="Calculate GPA">  
+    </div>
+    <div id="GPAs">
+        <p id="classInfo"></p>
+    </div>
+    <div>
+        <label>GPA:</label>
+        <p id="GPA">GPA will appear here after calculating</p>
+    </div>
+</div>
+<div id="otherLink">
+    <a href="finalsIndex.html"><i>Click Here to Check Out My Final's Calculator!</i></a>
+</div>
+<script src="GPACalc.js"></script>
+</body>
+</html>

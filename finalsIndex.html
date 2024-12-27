@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Finals Calculator</title>
+  <link type="text/css" rel="stylesheet" href="FinalsCalc.css">
+</head>
+<body>
+    <div id="mainthing">
+    <h1>Tetsu's "What you need on finals" Calculator</h1> 
+    <p>Directions: To find what grade you need on final exam to get your desired final grade, first select the duration of the class and entire the requested information. Then click "Calculate" to see needed grade. Click "Clear" to calculate for a different class. <br><br> Notes:<br>**If the grade need on final exam is above 100, then the desired final grade is not feasible**<br>**Your teacher may round a 92.5 up to a 93 or a 89.5 up to a 90 and so forth**
+    </p> 
+    <div>
+        <label  style="padding-bottom: 10px;">Class Length:</label>
+        <select id="duration">
+            <option value="selectClassLength">--Select an Option--</option>
+            <option value="twoSemesters">Two Semesters</option>
+            <option value="oneSemester">One Semester</option>
+          </select>
+    </div> 
+    <div id="oneSemester" class="close">
+        <div>
+            <label>Q1 Grade:</label>
+            <input type="text" id="q1grade1s">
+        </div>
+        <div>
+            <label>Q2 Grade:</label>
+            <input type="text" id="q2grade1s">
+        </div>
+        <div>
+            <label>Desired Final Grade:</label>
+            <input type="text" id="desiredGrade1s">
+        </div>
+    </div>
+    <div id="twoSemester" class="close">
+        <div>
+            <label>Q1 Grade:</label>
+            <input type="text" id="q1grade2s">
+        </div>
+        <div>
+            <label>Q2 Grade:</label>
+            <input type="text" id="q2grade2s">
+        </div>
+        <div>
+            <label>Midterm Grade:</label>
+            <input type="text" id="midtermGrade2">
+        </div>
+        <div>
+            <label>Q3 Grade:</label>
+            <input type="text" id="q3grade2s">
+        </div>
+        <div>
+            <label>Q4 Grade:</label>
+            <input type="text" id="q4grade2s">
+        </div>
+        <div>
+            <label>Desired Final Grade:</label>
+            <input type="text" id="desiredGrade2s">
+        </div>
+    </div>
+    <div>
+        <label></label> 
+        <input type="button" id="calculate" value="Calculate">  
+        <input type="button" id="clear" value="Clear" style="margin-left: 10px;">  
+    </div>
+    <div>
+        <label id="labeler">Grade for Finals:</label>
+        <p id="grade">Grade will appear here after calculating</p>
+    </div>
+</div>
+    <div id="otherLink">
+        <a href="GPAindex.html"><i>Click Here to Check Out My GPA Calculator!</i></a>
+    </div>
+    <script src="FinalsCalc.js"></script>
+</body>
+</html>
